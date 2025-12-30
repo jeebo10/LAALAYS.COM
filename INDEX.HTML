@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laalays.com</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary fw-bold fs-4" href="#">Laalays</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <button id="darkBtn" class="btn btn-outline-dark me-2" title="Toggle dark mode">
+          <i id="darkIcon" class="bi bi-moon-fill"></i>
+        </button>
+        <form class="d-flex" onsubmit="return false;">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section (carousel with provided images) -->
+<div id="heroCarousel" class="carousel slide hero" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/2.jpg" class="d-block w-100 hero-img" alt="hero1">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="fw-bold">Welcome to Laalays.com</h1>
+        <p class="lead">Modern IT Solutions, Designs & Technology</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/1 - Copy.jpg" class="d-block w-100 hero-img" alt="hero2">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="fw-bold">Build — Learn — Grow</h1>
+        <p class="lead">Resources, tutorials and services for your projects.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/4.jpg" class="d-block w-100 hero-img" alt="hero3">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="fw-bold">Design with Purpose</h1>
+        <p class="lead">Professional design & tech support.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm service-card">
+          <img src="images/service1.jpg" class="card-img-top" alt="webdev">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">We create modern, responsive websites.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm service-card">
+          <img src="images/service2.jpg" class="card-img-top" alt="graphics">
+          <div class="card-body">
+            <h5 class="card-title">Graphics Design</h5>
+            <p class="card-text">Beautiful branding & visual identity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm service-card">
+          <img src="images/service3.jpg" class="card-img-top" alt="itsupport">
+          <div class="card-body">
+            <h5 class="card-title">IT Support</h5>
+            <p class="card-text">Professional IT troubleshooting service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Latest Blog Posts</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <article class="card shadow-sm">
+          <img src="images/blog1.jpg" class="card-img-top" alt="blog1">
+          <div class="card-body">
+            <h5 class="card-title">Understanding Cybersecurity</h5>
+            <p class="card-text">Learn the basics of online protection and digital safety.</p>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="card shadow-sm">
+          <img src="images/blog2.jpg" class="card-img-top" alt="blog2">
+          <div class="card-body">
+            <h5 class="card-title">How to Start Web Development</h5>
+            <p class="card-text">A clean path to begin your programming journey.</p>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="card shadow-sm">
+          <img src="images/blog3.jpg" class="card-img-top" alt="blog3">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design Tips</h5>
+            <p class="card-text">Boost your creativity with modern design ideas.</p>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Your name">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="you@example.com">
+      </div>
+      <div class="col-12">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-primary px-4" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center bg-dark text-light py-4">
+  <div class="container">
+    <div class="social-icons mb-3">
+      <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+    </div>
+    <p class="mb-0">© 2025 Laalays.com — All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* General */
+:root{
+  --primary: #0d6efd;
+  --bg-light: #f8f9fa;
+  --dark-bg: #121212;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.35s, color 0.35s;
+  background: var(--bg-light);
+  color: #222;
+}
+
+/* Hero carousel images height */
+.hero .hero-img {
+  height: 65vh;
+  object-fit: cover;
+}
+
+/* Cards hover */
+.service-card, .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.35s ease;
+}
+
+/* Footer */
+footer {
+  padding: 24px 0;
+}
+
+/* Social icons */
+.social-icons i {
+  font-size: 20px;
+}
+
+/* Dark mode (applied on body.dark) */
+body.dark {
+  background: var(--dark-bg);
+  color: #eaeaea;
+}
+body.dark .bg-light {
+  background: #1b1b1b !important;
+}
+body.dark .card {
+  background: #1e1e1e;
+  color: #eaeaea;
+}
+body.dark .navbar, body.dark .navbar-light {
+  background: #151515 !important;
+}

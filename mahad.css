@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBIT WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">ORBIT COLLEGE</h2>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>WELCOME TO ORBIT COLLEGE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, accusantium.</p>
+        <button>SEE MORE</button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="heading">
+            <h2>ABOUT US</h2>
+        </div>
+        <div class="container">
+            <div class="about-content">
+                <h3>WELCOME TO <span>ORBIT COLLEGE</span></h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, pariatur ut nulla, totam aspernatur dolorem soluta dolores quos dignissimos, minima vel rem cumque necessitatibus ad delectus ipsam aliquid!</p>
+                <button>SEE MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <div class="heading">
+            <h2>OUR COURSES</h2>
+        </div>
+        <div class="container courses">
+            <div class="course">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript and become a professional web developer.</p>
+            </div>
+            <div class="course">
+                <h3>Graphic Design</h3>
+                <p>Master Photoshop, Illustrator, and create stunning designs.</p>
+            </div>
+            <div class="course">
+                <h3>Networking</h3>
+                <p>Understand networks, routers, switches, and get ready for certifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="heading">
+            <h2>OUR TEAM</h2>
+        </div>
+        <div class="container team">
+            <div class="team-member">
+                <h3>Mr. Ali Mohamed</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <h3>Mrs. Amina Abdi</h3>
+                <p>Head of Department</p>
+            </div>
+            <div class="team-member">
+                <h3>Mr. Ahmed Hassan</h3>
+                <p>Instructor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="heading">
+            <h2>CONTACT US</h2>
+        </div>
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ORBIT COLLEGE. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
