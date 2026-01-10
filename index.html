@@ -1,119 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAALAYS.COM</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deeq Alle Shop Management</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <nav>
-        <H2>LAALAYS.COM</H2>
-        <ul>
-            <li><a href="https://taashudiin.com/index.php">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
- 
+    <div class="container">
+        <h1>🛒 DEEQ ALLE SHOP</h1>
+        <p class="subtitle">Maamul Alaabta • Iib • Warbixin Faa'iido</p>
 
-    <div class="hero">
-        <h2>WELCOME TO LAALAYS.COM</h2>
-        <p>Laalays.com waa goob ganacsi online ah oo loogu talagalay dadka doonaya Online fudayd.</p>
-        <button>SEE MORE</button>
+        <div class="card">
+            <h2>➕ Ku dar Alaab</h2>
+            <input id="pname" placeholder="Magaca Alaabta" />
+            <input id="buy" type="number" placeholder="Qiimaha Iibsiga $" />
+            <input id="sell" type="number" placeholder="Qiimaha Iibka $" />
+            <input id="qty" type="number" placeholder="Tirada" />
+            <button onclick="addProduct()">Ku dar</button>
+        </div>
+
+        <div class="card">
+            <h2>💰 Iibi Alaab</h2>
+            <input id="pid" type="number" placeholder="Product ID" />
+            <input id="sqty" type="number" placeholder="Tirada" />
+            <button onclick="sellProduct()">Iibi</button>
+        </div>
+
+        <div class="card">
+            <h2>📊 Warbixin</h2>
+            <button onclick="getReport('7 DAY')">Todobaad</button>
+            <button onclick="getReport('1 MONTH')">Bil</button>
+            <button onclick="getReport('1 YEAR')">Sanad</button>
+            <pre id="report"></pre>
+        </div>
     </div>
 
-
- 
-
-    <section id="about"> 
-        <div class="heading">
-            <h2>ABOUT US</h2>
-        </div>
-        <div class="container">
-            <div class="about-content">
-                <h2>WELCOME TO <span>LAALAYS.COM</span> </h2>
-                <p> Laalays.com waa goob ganacsi online ah oo loogu talagalay dadka doonaya fudayd, tayo, iyo kalsooni. Dukaankayagu wuxuu isku daraa adeegyo casri ah iyo alaabo kala duwan, si aad uga hesho wax kasta oo aad u baahan tahay hal meel. Waxaan si joogto ah u dadaalnaa si aan kuu siino qiimo macquul ah, adeeg degdeg ah, iyo gaarsiin hufan oo dalka iyo dibaddaba ah. Waxaa naga go’an inaan macaamiisheena siino khibrad iibsasho oo ka duwan, taas oo ka dhigaysa Laalays.com in ay noqoto goob aad mar walba ku soo noqoto. Waxaan fahamsanahay in macaamil kasta uu leeyahay baahi gaar ah, sidaa darteed waxaan ku dadaaleynaa inaan soo bandhigno xulashooyin ballaaran, laga bilaabo dhar iyo qalab casri ah ilaa alaabo guri iyo adeegyo kale oo muhiim ah. Adeeggayagu ma aha oo kaliya iibinta, balse waa dhisidda kalsooni iyo xiriir waqti dheer soconaya. Waxa aanu kuugu talo galnay khibrad online oo fudud, si aad uga fogaato mashquulka suuqa, isla markaana aad uga faa’iidaysato dalabyo iyo qiimo dhimis joogto ah. Laalays.com waa halka aad ku helayso dukaameysi ammaan ah, raaxo leh, oo la jaanqaadaya waqtigaaga.</p>
-                <button>SEE MORE</button>
-            </div>
-            <div class="about-image">
-                <img src=".download/images/2.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- start courses section -->
-   <div id="courses"> 
-    <div class="heading">
-        <h2>OUR COURSES</h2>
-    </div>
- 
-    <div class="courses-container">
-
-        <div class="box">
-            <img src="images/WEB.png" alt="Lama heli karo">
-            <h2>WEB DEVELOPMENT</h2>
-            <p>Qaybtan waxaad ku baraysaan dhisida iyo samaynta websiteska <span>HTML , CSS & JS</span></p>
-            <button class="btn"><a href="#">SEE MORE</a></button>
-        </div>
- 
-        <div class="box">
-            <img src="images/TECHNICAL.png" alt="">
-            <h2>TECHNICAL ENGINEER</h2>
-            <p>Qaybtan waxaad ku baranaysa furfurka iyo xidhxidhka computerska <span>HARDWARE, O/S & TOT</span></p>
-            <button class="btn"><a href="#">See More</a></button>
-        </div>
-
-        <div class="box">
-            <img src="images/GRAPHIC.png" alt="">
-            <h2>GRAPHIC DESIGNER</h2>
-            <p>Qaybtan waxaad ku baranaysa samaynta iyo hagaajinta desingerka <span>PHOTOSHOP, ILLUSTRATOR</span></p>
-            <button class="btn"><a href="#">See More</a></button>
-        </div>
-
-        <div class="box">
-            <img src="images/local-area-network.png" alt="">
-            <h2>NETWORKING</h2>
-            <p>QAYBTAN WAXAAD KU BARANAYSAA ISKU XIDHKA COMPUTERS BADAN SI AY XOG U WADAGAAN</p>
-            <button class="btn"><a href="#">See More</a></button>
-        </div>
-
-        <div class="box">
-            <img src="images/coding.png" alt="">
-            <h2>PROGRAMMING</h2>
-            <p>WAXAAD QAYBTAN KU BARANAYSA LUUQADAHA HIGH LEVEL LANGUAGE <span>C++,C#</span></p>
-             <button class="btn"><a href="#">See More</a></button>
-        </div>
-
-        <div class="box">
-            <img src="images/database-storage.png" alt="">
-            <h2>DATABASE</h2>
-            <p>QAYBTAN WAXAAD KU BARANAYSAA SIDA LOO MAAMULO DATABASESKA <span>SQL,MYSQL</span></p>
-            <button class="btn"><a href="#">See More</a></button>
-        </div>
-
-    </div>
-   </div>
-
-   <!-- end courses section -->
-    
-
-
-   <footer>
-
-    <div class="bottom-bar">
-        <p>&copy; 2025 LAALAYS.COM .ALL Right Reserved</p>
-        <a href="https://m.facebook.com/SalloSenior/" target="_blank"><img src="./icones/instagram.svg" alt=""></a>
-    </div>
-
-</footer>
-
+    <script src="script.js"></script>
 </body>
-</html>s
+
+</html>
